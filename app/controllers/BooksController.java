@@ -66,7 +66,11 @@ public class BooksController extends Controller{
             return notFound("Book not found!");
         }
         oldBook.title = book.title;
+<<<<<<< HEAD
+        oldBook.link = book.link;
+=======
         oldBook.price = book.price;
+>>>>>>> ec555096eff22510aafdad743c0f3f357ff9bda5
         oldBook.author = book.author;
 
         return redirect(routes.BooksController.index());
