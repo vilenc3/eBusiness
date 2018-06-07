@@ -2,16 +2,11 @@
 
 @main("Show book"){
         <h2>@book.title</h2>
-<<<<<<< HEAD
         <p><img src="@book.link"></p>
-=======
-        <p>Price: @book.price</p>
->>>>>>> ec555096eff22510aafdad743c0f3f357ff9bda5
         <p>Author: @book.author</p>
 
         <a href="@routes.BooksController.edit(book.id)">Edit</a>
         <a href="@routes.BooksController.delete(book.id)">Delete</a>
-<<<<<<< HEAD
 
         <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                 <input type="hidden" name="cmd" value="_s-xclick">
@@ -20,7 +15,5 @@
                 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
         </form>
 
-=======
->>>>>>> ec555096eff22510aafdad743c0f3f357ff9bda5
 }
 

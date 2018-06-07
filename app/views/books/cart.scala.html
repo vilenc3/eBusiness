@@ -12,24 +12,16 @@
             <thead>
                 <tr>
                     <th>Title</th>
-<<<<<<< HEAD
                     <th>Link</th>
-=======
                     <th>Price</th>
->>>>>>> ec555096eff22510aafdad743c0f3f357ff9bda5
                     <th>Author</th>
                 </tr>
             </thead>
             <tbody>
         @for(book <- cart) {
             <tr>
-<<<<<<< HEAD
                 <td>@book.link</td>
                 <td>@book.title</td>
-=======
-                <td>@book.title</td>
-                <td>@book.price $</td>
->>>>>>> ec555096eff22510aafdad743c0f3f357ff9bda5
                 <td>@book.author</td>
                 <td><a type="button" href="@routes.BooksController.deleteFromCart(book.id)" class="btn btn-secondary">Delete from cart</a></td>
             </tr>
