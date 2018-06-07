@@ -12,7 +12,6 @@
             <thead>
                 <tr>
                     <th>Title</th>
-                    <th>Link</th>
                     <th>Price</th>
                     <th>Author</th>
                 </tr>
@@ -20,8 +19,8 @@
             <tbody>
         @for(book <- cart) {
             <tr>
-                <td>@book.link</td>
                 <td>@book.title</td>
+                <td>@book.price $</td>
                 <td>@book.author</td>
                 <td><a type="button" href="@routes.BooksController.deleteFromCart(book.id)" class="btn btn-secondary">Delete from cart</a></td>
             </tr>

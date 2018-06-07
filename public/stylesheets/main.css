@@ -1,5 +1,5 @@
 body {
-    background-color: #2e2e2e !important;
+    background-color: #ddd4d4 !important;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -29,7 +29,7 @@ form {
     color: white;
 }
 
-input[type=text], input[type=password] {
+input[type=text] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -38,4 +38,78 @@ input[type=text], input[type=password] {
     border-radius: 4px;
     box-sizing: border-box;
     color: black;
+}
+
+
+.submenu-img {
+
+    position: inherit;
+    padding: 10px 0 10px 0;
+    margin-left: 40%;
+    display:inline-block; /* add this rule */
+    margin-right: 10%;
+    text-align:center;
+}
+
+.button-img {
+
+    position: inherit;
+    padding: 10px 0 10px 0;
+    margin-left: 5px;
+    display:inline-block; /* add this rule */
+    text-align:center;
+}
+
+.container-fluid {
+    background-color: #998888;
+
+}
+
+.navbar-inverse .navbar-text {
+    color: #350505 !important;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #350505 !important;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: #fff !important;
+    background-color: transparent !important;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #350505 !important;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+    color: #fff !important;
+    background-color: transparent !important;
+}
+
+h3 {
+    margin-right: 600px;
+    color: #350505 !important;
+}
+
+h1 {
+    color: #350505 !important;
+}
+
+.cover-heading
+{
+    color: #350505 !important;
+}
+
+.lead
+{
+    color: #350505 !important;
+}
+
+h2 {
+    color: #350505 !important;
+}
+
+p
+{
+    color: #350505 !important;
 }

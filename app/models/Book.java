@@ -6,18 +6,18 @@ import java.util.Set;
 
 public class Book {
     public Integer id;
-    public String link;
     public String title;
+    public Integer price;
     public String author;
 
     public Book(){
 
     }
 
-    public Book(Integer id, String link, String title, String author){
+    public Book(Integer id, String title, Integer price, String author){
         this.id = id;
-        this.link=link;
         this.title=title;
+        this.price=price;
         this.author=author;
     }
 
@@ -26,9 +26,11 @@ public class Book {
 
     static {
         books = new HashSet<>();
-        books.add(new Book(1, "https://picsum.photos/200/300?image=63", "Picture1", "Kot"));
-        books.add(new Book(2, "https://picsum.photos/200/300?image=634", "Picture2", "Kot"));
-        books.add(new Book(3, "https://picsum.photos/200/300?image=653", "Picture3", "Kot"));
+        cart = new HashSet<>();
+        books.add(new Book(1, "The Trial", 20, "Franz Kafka"));
+        books.add(new Book(2, "Silmarillion", 15, "J R R Tolkien"));
+        books.add(new Book(3, "The Odyssey", 25, "Homer"));
+        books.add(new Book(4, "War and Peace", 30, "Leo Tolstoy"));
     }
 
     public static Set<Book> retrieveAll(){
